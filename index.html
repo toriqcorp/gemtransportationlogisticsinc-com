@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GEM Transportation &amp; Logistics Inc | Fairburn, GA</title>
+<meta name="description" content="GEM Transportation &amp; Logistics Inc — regional &amp; OTR dry-van carrier based in Fairburn, GA. Now hiring CDL-A drivers. USDOT# 3706759 | MC-1351639.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/json" id="company-data">
+{
+  "legal_name": "GEM TRANSPORTATION & LOGISTICS INC",
+  "domain": "gemtransportationlogisticsinc.com",
+  "contact_name": "Gregory Ware",
+  "phone": "(470) 484-4666",
+  "email": "gregory@gemtransportationlogisticsinc.com",
+  "address": "57 Jonesboro Rd Suite B, Fairburn, GA 30213",
+  "usdot": "3706759",
+  "mc": "MC-1351639",
+  "job_title": "CDL-A Company Driver — OTR & Regional Dry Van",
+  "pay_range": "$1,300–$1,700/week ($65,000–$85,000/yr DOE)",
+  "home_time": "Regional: out 5-7 days, home weekly | OTR: out 10-14 days, home 2-3 days",
+  "experience_required": "Minimum 6 months verifiable CDL-A tractor-trailer experience",
+  "perks": [
+    "Weekly direct deposit",
+    "Late-model Freightliner & Kenworth automatics",
+    "Full medical, dental & vision after 60 days",
+    "401(k) with company match",
+    "Paid orientation + mileage/detention pay",
+    "No-touch freight, 95% drop & hook",
+    "Rider & pet policy",
+    "Paid vacation after 1 year"
+  ],
+  "service_area": "Southeast regional lanes (GA, FL, AL, TN, SC, NC) plus OTR freight across the lower 48",
+  "equipment": "53' dry van, company-maintained tractors, ELD-equipped"
+}
+</script>
+<style>
+  :root{
+    --black:#0a0a0a;
+    --black-2:#121212;
+    --black-3:#1a1a1a;
+    --gold:#c9a227;
+    --gold-light:#e4c45c;
+    --white:#f5f3ee;
+    --grey:#9a968c;
+    --line:rgba(201,162,39,0.25);
+    --line-soft:rgba(245,243,238,0.1);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--black);
+    color:var(--white);
+    font-family:'Work Sans',sans-serif;
+    font-weight:400;
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+  img{display:block;max-width:100%;height:auto;}
+  a{color:inherit;text-decoration:none;}
+  h1,h2,h3,.display{
+    font-family:'Bebas Neue',sans-serif;
+    font-weight:400;
+    letter-spacing:0.03em;
+    line-height:1.05;
+    text-transform:uppercase;
+  }
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px;}
+  .eyebrow{
+    font-family:'Work Sans',sans-serif;
+    font-size:0.78rem;
+    letter-spacing:0.25em;
+    text-transform:uppercase;
+    color:var(--gold);
+    font-weight:600;
+    margin-bottom:14px;
+    display:block;
+  }
+  .btn{
+    display:inline-block;
+    padding:16px 34px;
+    font-family:'Bebas Neue',sans-serif;
+    font-size:1.15rem;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    border:1px solid var(--gold);
+    color:var(--gold);
+    background:transparent;
+    transition:background 0.25s ease, color 0.25s ease;
+    cursor:pointer;
+  }
+  .btn:hover{background:var(--gold);color:var(--black);}
+  .btn-solid{background:var(--gold);color:var(--black);}
+  .btn-solid:hover{background:var(--gold-light);color:var(--black);}
+
+  /* HEADER */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:1000;
+    background:rgba(10,10,10,0.88);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line-soft);
+  }
+  .nav{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:16px 24px;max-width:1180px;margin:0 auto;
+  }
+  .brand{
+    font-family:'Bebas Neue',sans-serif;
+    font-size:1.5rem;letter-spacing:0.05em;
+    display:flex;flex-direction:column;line-height:1;
+  }
+  .brand span{font-size:0.6rem;letter-spacing:0.3em;color:var(--gold);font-family:'Work Sans',sans-serif;font-weight:600;margin-top:4px;}
+  nav.links{display:flex;gap:32px;}
+  nav.links a{
+    font-size:0.82rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:600;
+    color:var(--white);opacity:0.85;transition:opacity 0.2s, color 0.2s;
+  }
+  nav.links a:hover{opacity:1;color:var(--gold);}
+  .nav-cta{display:flex;align-items:center;gap:20px;}
+  .nav-phone{font-weight:600;color:var(--gold-light);font-size:0.9rem;letter-spacing:0.03em;}
+  .menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--white);padding:8px 12px;font-size:1.2rem;}
+
+  /* HERO */
+  .hero{
+    position:relative;min-height:92vh;display:flex;align-items:flex-end;
+    background-size:cover;background-position:center 35%;
+  }
+  .hero::before{
+    content:"";position:absolute;inset:0;
+    background:
+      linear-gradient(180deg, rgba(10,10,10,0.55) 0%, rgba(10,10,10,0.35) 35%, rgba(10,10,10,0.75) 78%, rgba(10,10,10,0.96) 100%),
+      linear-gradient(90deg, rgba(10,10,10,0.75) 0%, rgba(10,10,10,0.15) 50%, rgba(10,10,10,0.6) 100%);
+  }
+  .hero-inner{position:relative;z-index:2;padding:0 24px 90px;max-width:1180px;margin:0 auto;width:100%;}
+  .hero h1{
+    font-size:clamp(3rem, 8vw, 6.2rem);
+    max-width:900px;
+    color:var(--white);
+  }
+  .hero h1 em{font-style:normal;color:var(--gold);}
+  .hero p.lead{
+    max-width:560px;font-size:1.1rem;color:var(--white);opacity:0.88;margin:20px 0 32px;
+  }
+  .hero-ctas{display:flex;gap:18px;flex-wrap:wrap;}
+  .hero-badges{
+    display:flex;gap:28px;margin-top:56px;flex-wrap:wrap;
+    border-top:1px solid var(--line-soft);padding-top:24px;
+  }
+  .hero-badges div{font-size:0.78rem;letter-spacing:0.05em;color:var(--grey);text-transform:uppercase;}
+  .hero-badges strong{display:block;font-family:'Bebas Neue',sans-serif;font-size:1.8rem;color:var(--gold-light);letter-spacing:0.04em;text-transform:none;}
+
+  /* SECTION GENERAL */
+  section{padding:110px 0;position:relative;}
+  .section-head{max-width:680px;margin-bottom:56px;}
+  .section-head h2{font-size:clamp(2.2rem,5vw,3.4rem);}
+  .section-head p{color:var(--grey);font-size:1.05rem;margin-top:16px;}
+  .divider{height:1px;background:var(--line-soft);}
+
+  /* REVEAL */
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity 0.7s ease, transform 0.7s ease;}
+  .reveal.visible{opacity:1;transform:translateY(0);}
+
+  /* ABOUT */
+  .about{background:var(--black-2);}
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
+  .about-img{position:relative;border:1px solid var(--line);padding:10px;}
+  .about-img img{width:100%;height:460px;object-fit:cover;}
+  .about-text p{color:#d8d5cc;margin-bottom:18px;font-size:1.02rem;}
+  .trust-badges{
+    display:flex;gap:16px;flex-wrap:wrap;margin-top:28px;
+    font-size:0.82rem;color:var(--grey);letter-spacing:0.03em;
+  }
+  .trust-badges span{
+    border:1px solid var(--line);padding:8px 14px;color:var(--gold-light);
+  }
+
+  /* STATS STRIP */
+  .stats{background:var(--black);border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);padding:56px 0;}
+  .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center;}
+  .stats-grid div strong{display:block;font-family:'Bebas Neue',sans-serif;font-size:3rem;color:var(--gold);letter-spacing:0.02em;}
+  .stats-grid div span{font-size:0.78rem;text-transform:uppercase;letter-spacing:0.12em;color:var(--grey);}
+
+  /* JOBS / PAY */
+  .jobs{background:var(--black-3);}
+  .job-card{
+    border:1px solid var(--line);padding:44px;background:var(--black-2);
+    display:grid;grid-template-columns:1.1fr 1fr;gap:48px;
+  }
+  .job-card h3{font-size:2rem;color:var(--white);margin-bottom:6px;}
+  .job-card .pay{font-family:'Bebas Neue',sans-serif;font-size:2.6rem;color:var(--gold);letter-spacing:0.02em;margin:10px 0 18px;}
+  .job-meta{display:flex;flex-direction:column;gap:14px;margin-top:10px;}
+  .job-meta div{font-size:0.95rem;color:#d8d5cc;border-left:2px solid var(--gold);padding-left:14px;}
+  .job-meta strong{display:block;color:var(--gold-light);font-size:0.72rem;text-transform:uppercase;letter-spacing:0.12em;margin-bottom:4px;}
+  .perks-list{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:14px 20px;}
+  .perks-list li{font-size:0.95rem;color:#d8d5cc;padding-left:22px;position:relative;}
+  .perks-list li::before{content:"—";position:absolute;left:0;color:var(--gold);}
+
+  /* COVERAGE */
+  .coverage-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
+  .coverage-img{border:1px solid var(--line);padding:10px;}
+  .coverage-img img{width:100%;height:420px;object-fit:cover;}
+  .lane-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px;}
+  .lane-tags span{border:1px solid var(--line);padding:9px 16px;font-size:0.85rem;letter-spacing:0.04em;color:var(--gold-light);}
+
+  /* ACCENT / CTA BAND */
+  .cta-band{
+    position:relative;background-size:cover;background-position:center;min-height:380px;
+    display:flex;align-items:center;justify-content:center;text-align:center;
+  }
+  .cta-band::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(10,10,10,0.88), rgba(10,10,10,0.72));}
+  .cta-band-inner{position:relative;z-index:2;max-width:680px;padding:0 24px;}
+  .cta-band h2{font-size:clamp(2.2rem,5vw,3.6rem);margin-bottom:18px;}
+  .cta-band p{color:#d8d5cc;margin-bottom:32px;font-size:1.05rem;}
+
+  /* CONTACT */
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;}
+  .contact-box{border:1px solid var(--line);padding:40px;background:var(--black-2);}
+  .contact-box h3{font-size:1.6rem;margin-bottom:24px;color:var(--gold-light);}
+  .contact-row{display:flex;gap:16px;margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--line-soft);}
+  .contact-row:last-child{border-bottom:none;}
+  .contact-row strong{display:block;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.12em;color:var(--grey);margin-bottom:4px;}
+  .contact-row div a{color:var(--white);font-size:1.02rem;}
+  .contact-row div a:hover{color:var(--gold);}
+  .apply-form{display:flex;flex-direction:column;gap:16px;}
+  .apply-form input, .apply-form select, .apply-form textarea{
+    background:var(--black);border:1px solid var(--line-soft);color:var(--white);
+    padding:14px 16px;font-family:'Work Sans',sans-serif;font-size:0.95rem;
+  }
+  .apply-form input:focus, .apply-form select:focus, .apply-form textarea:focus{outline:none;border-color:var(--gold);}
+  .apply-form label{font-size:0.78rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--grey);margin-bottom:-8px;}
+
+  /* FOOTER */
+  footer{background:var(--black);border-top:1px solid var(--line-soft);padding:56px 0 28px;}
+  .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:48px;margin-bottom:40px;}
+  footer h4{font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:0.06em;color:var(--gold-light);margin-bottom:16px;}
+  footer p{color:var(--grey);font-size:0.9rem;}
+  footer ul{list-style:none;}
+  footer ul li{margin-bottom:10px;}
+  footer ul a{color:var(--grey);font-size:0.9rem;}
+  footer ul a:hover{color:var(--gold);}
+  .footer-bottom{
+    border-top:1px solid var(--line-soft);padding-top:24px;
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;
+    font-size:0.78rem;color:var(--grey);letter-spacing:0.02em;
+  }
+  .footer-dot{color:var(--gold);margin:0 8px;}
+
+  @media (max-width: 880px){
+    nav.links{display:none;}
+    .menu-btn{display:block;}
+    .nav-phone{display:none;}
+    .about-grid, .coverage-grid, .contact-grid{grid-template-columns:1fr;gap:40px;}
+    .job-card{grid-template-columns:1fr;padding:28px;gap:28px;}
+    .stats-grid{grid-template-columns:1fr 1fr;}
+    .footer-grid{grid-template-columns:1fr;gap:32px;}
+    section{padding:72px 0;}
+    .hero{min-height:100vh;}
+    .perks-list{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">GEM TRANSPORTATION<span>&amp; LOGISTICS INC</span></div>
+    <nav class="links">
+      <a href="#about">About</a>
+      <a href="#jobs">Driver Jobs</a>
+      <a href="#coverage">Coverage</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="nav-phone" href="tel:14704844666">(470) 484-4666</a>
+      <a class="btn btn-solid" href="#contact">Apply Now</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero" style="background-image:url('images/hero.jpg');">
+  <div class="hero-inner">
+    <span class="eyebrow">CDL-A Drivers &middot; Fairburn, Georgia</span>
+    <h1>Haul with a carrier that <em>runs on respect.</em></h1>
+    <p class="lead">GEM Transportation &amp; Logistics Inc keeps Southeast regional and OTR dry-van freight moving — with late-model equipment, weekly pay, and dispatchers who answer the phone.</p>
+    <div class="hero-ctas">
+      <a href="#jobs" class="btn btn-solid">View Driver Pay</a>
+      <a href="#contact" class="btn">Call (470) 484-4666</a>
+    </div>
+    <div class="hero-badges">
+      <div><strong>$1,300–$1,700</strong>Weekly Pay Range</div>
+      <div><strong>95%</strong>Drop &amp; Hook Freight</div>
+      <div><strong>6 mo.</strong>Experience Required</div>
+      <div><strong>Weekly</strong>Home Time (Regional)</div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-img reveal">
+      <img src="images/about.jpg" alt="GEM Transportation dry van truck on the road" loading="lazy">
+    </div>
+    <div class="about-text reveal">
+      <span class="eyebrow">About Us</span>
+      <h2 style="font-size:clamp(2rem,4vw,2.8rem);margin-bottom:20px;">Built in Fairburn, growing across the Southeast.</h2>
+      <p>GEM Transportation &amp; Logistics Inc is a regional carrier and logistics coordination company based just south of Atlanta in Fairburn, Georgia. What started as a small dry-van operation has grown into a dependable freight partner for shippers across Georgia, Florida, Alabama, Tennessee, South Carolina, and North Carolina — with select OTR lanes reaching across the lower 48.</p>
+      <p>We run a company-maintained fleet, keep freight no-touch wherever possible, and believe a driver who's treated right stays for years, not months. Dispatch is local, pay is on time, and equipment is kept in the shop, not held together with tape.</p>
+      <div class="trust-badges">
+        <span>USDOT# 3706759</span>
+        <span>MC-1351639</span>
+        <span>Fairburn, GA</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="wrap stats-grid">
+    <div class="reveal"><strong>24/7</strong><span>Dispatch Support</span></div>
+    <div class="reveal"><strong>53'</strong><span>Dry Van Trailers</span></div>
+    <div class="reveal"><strong>6</strong><span>States in Regional Lanes</span></div>
+    <div class="reveal"><strong>100%</strong><span>No-Touch Freight</span></div>
+  </div>
+</section>
+
+<section class="jobs" id="jobs">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Now Hiring</span>
+      <h2>Driver pay &amp; perks</h2>
+      <p>One open seat, two ways to run it — pick regional or OTR when you apply.</p>
+    </div>
+    <div class="job-card reveal">
+      <div>
+        <h3>CDL-A Company Driver</h3>
+        <div class="pay">$1,300–$1,700/wk</div>
+        <p style="color:var(--grey);font-size:0.95rem;">($65,000–$85,000/yr depending on route &amp; experience)</p>
+        <div class="job-meta">
+          <div><strong>Home Time</strong>Regional: home weekly &middot; OTR: home every 10–14 days</div>
+          <div><strong>Experience</strong>Minimum 6 months verifiable CDL-A tractor-trailer experience</div>
+          <div><strong>Equipment</strong>53' dry van, late-model automatics, ELD-equipped</div>
+          <div><strong>Freight</strong>95% drop &amp; hook, no-touch</div>
+        </div>
+      </div>
+      <div>
+        <strong style="display:block;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.12em;color:var(--grey);margin-bottom:14px;">Perks &amp; Benefits</strong>
+        <ul class="perks-list">
+          <li>Weekly direct deposit</li>
+          <li>Medical, dental &amp; vision (60 days)</li>
+          <li>401(k) with company match</li>
+          <li>Mileage + detention pay</li>
+          <li>Paid orientation</li>
+          <li>Rider &amp; pet policy</li>
+          <li>Late-model Freightliner &amp; Kenworth</li>
+          <li>Paid vacation after 1 year</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="coverage" id="coverage">
+  <div class="wrap coverage-grid">
+    <div class="reveal">
+      <span class="eyebrow">Service Area</span>
+      <h2 style="font-size:clamp(2rem,4vw,2.8rem);margin-bottom:20px;">Southeast regional, coast-to-coast when freight calls for it.</h2>
+      <p style="color:#d8d5cc;">Our core lanes run tight regional loops out of Fairburn so drivers get home on schedule — plus dedicated OTR freight for shippers who need the lower 48 covered.</p>
+      <div class="lane-tags">
+        <span>Georgia</span>
+        <span>Florida</span>
+        <span>Alabama</span>
+        <span>Tennessee</span>
+        <span>South Carolina</span>
+        <span>North Carolina</span>
+        <span>OTR — Lower 48</span>
+      </div>
+    </div>
+    <div class="coverage-img reveal">
+      <img src="images/coverage.jpg" alt="Tractor-trailers running a Southeast regional highway lane" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<div class="cta-band reveal" style="background-image:url('images/accent.jpg');">
+  <div class="cta-band-inner">
+    <span class="eyebrow">Ready to Run With Us?</span>
+    <h2>Your next truck is waiting in Fairburn.</h2>
+    <p>Call Gregory Ware directly or send your application below — most drivers hear back within one business day.</p>
+    <a href="#contact" class="btn btn-solid">Apply Today</a>
+  </div>
+</div>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-box reveal">
+      <h3>Get in touch</h3>
+      <div class="contact-row">
+        <div>
+          <strong>Contact</strong>
+          <a href="mailto:gregory@gemtransportationlogisticsinc.com">Gregory Ware</a>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div>
+          <strong>Phone</strong>
+          <a href="tel:14704844666">(470) 484-4666</a>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div>
+          <strong>Email</strong>
+          <a href="mailto:gregory@gemtransportationlogisticsinc.com">gregory@gemtransportationlogisticsinc.com</a>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div>
+          <strong>Address</strong>
+          <a href="https://maps.google.com/?q=57+Jonesboro+Rd+Suite+B,+Fairburn,+GA+30213" target="_blank" rel="noopener">57 Jonesboro Rd Suite B, Fairburn, GA 30213</a>
+        </div>
+      </div>
+    </div>
+    <div class="contact-box reveal">
+      <h3>Apply now</h3>
+      <form class="apply-form" onsubmit="event.preventDefault(); alert('Thanks — your application was received. Gregory will be in touch shortly.');">
+        <label>Full Name</label>
+        <input type="text" required placeholder="Jane Smith">
+        <label>Phone</label>
+        <input type="tel" required placeholder="(555) 555-5555">
+        <label>Years of CDL-A Experience</label>
+        <select>
+          <option>6 months – 1 year</option>
+          <option>1 – 3 years</option>
+          <option>3+ years</option>
+        </select>
+        <label>Preferred Route</label>
+        <select>
+          <option>Regional</option>
+          <option>OTR</option>
+          <option>Either</option>
+        </select>
+        <button type="submit" class="btn btn-solid" style="margin-top:8px;">Submit Application</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>GEM TRANSPORTATION &amp; LOGISTICS INC</h4>
+        <p>57 Jonesboro Rd Suite B<br>Fairburn, GA 30213</p>
+        <p style="margin-top:14px;">USDOT# 3706759 &nbsp;|&nbsp; MC-1351639</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#jobs">Driver Jobs</a></li>
+          <li><a href="#coverage">Coverage</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:14704844666">(470) 484-4666</a></li>
+          <li><a href="mailto:gregory@gemtransportationlogisticsinc.com">gregory@gemtransportationlogisticsinc.com</a></li>
+          <li><a href="#contact">Apply Now</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; <span id="yr"></span> GEM Transportation &amp; Logistics Inc. All rights reserved.</div>
+      <div>gemtransportationlogisticsinc.com <span class="footer-dot">&bull;</span> USDOT 3706759 <span class="footer-dot">&bull;</span> MC-1351639</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
